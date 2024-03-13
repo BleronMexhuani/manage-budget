@@ -19,17 +19,7 @@
 * Composer
 * Node.js
 
-## Installation
 
-* Clone the repository (`git clone https://github.com/range-of-motion/budget.git`)
-    * You should always check out a tag, since the `master` branch might not always be stable (`git checkout TAG`)
-* Install dependencies (`composer install --no-dev -o`)
-* Run installation command (`php artisan budget:install`)
-* Configure additional services in `.env` (database or mail, for example)
-* Run migrations for database (`php artisan migrate`)
-* Head over to your list of crons (`crontab -e`) and add `* * * * * cd /path-to-budget && php artisan schedule:run >> /dev/null 2>&1`
-
-*Note that in order for certain features to work properly, the jobs queue needs to be watched. This can be done by either running `php artisan queue:work` or using [Supervisor](https://laravel.com/docs/7.x/queues#supervisor-configuration).*
 
 ## Updating
 
